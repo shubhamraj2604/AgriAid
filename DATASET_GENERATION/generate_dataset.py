@@ -22,7 +22,7 @@ def generate_row():
     }
 
 
-def generate_dataset(n=10000):
+def generate_dataset(n=30000):
     return [generate_row() for _ in range(n)]
 
 
@@ -34,5 +34,5 @@ def save_csv(data, filename="crop_dataset.csv"):
 
 
 if __name__ == "__main__":
-    data = generate_dataset(10000)
+    data = generate_dataset(30000)
     save_csv(data)
